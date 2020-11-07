@@ -1,0 +1,11 @@
+version: "3"
+
+services: 
+  # taking mnongodb image from docker.hub
+  mymongo:
+    image: "mongo"
+  # taking our application image
+  mynode:
+    build: .
+    ports: 
+      - "8000:8000"
